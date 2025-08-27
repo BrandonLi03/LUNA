@@ -49,7 +49,7 @@ function chat(){
 
 // untuk mengirim pesan ke AI melalui API gemini
 function AI(conversation) {
-    const APIkey ="AIzaSyD9m_OVbNE4o4iVE3N3JNXyMaOpAYD3LTc"; // API key
+    const APIkey ="API_key"; // API key
     return fetch(
         // endpoint di dapat dari gemini studio
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${APIkey}`,
