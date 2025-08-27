@@ -1,0 +1,234 @@
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #181717; */
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chatBox {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    height: 600px;
+    padding: 80px 307px;
+    overflow: scroll;
+    scrollbar-width: none;
+    transition: all 0.3s ease-in-out;
+    white-space: pre-wrap;
+}
+
+.chatBox strong {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.chatBox li {
+    margin-left: 20px;
+}
+
+.chatBox table {
+    border: solid 0.5px white;
+    text-align: center;
+}
+
+.chatBox td, th {
+    border: solid 0.5px white;
+    padding: 5px 10px;
+}
+
+.inputBox {
+    position: absolute;
+    width: 60%;
+    height: fit-content;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: end;
+    z-index: 900;
+    bottom: 10%;
+    left: 20%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid 0.5px #363636;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.inputBox.active{
+    position: absolute;
+    width: 60%;
+    height: fit-content;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: end;
+    z-index: 900;
+    bottom: 40%;
+    left: 20%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid 0.5px #363636;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.userInput {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    min-height: 40px;
+    max-height: 300px;  
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    align-content: center;
+    scrollbar-width: none;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(51, 51, 55);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button img {
+    width: 65%;
+    height: 65%;
+}
+
+.userbox {
+    background-color: rgb(51, 51, 55);
+    border: none;
+    border-radius: 10px 10px 3px 10px;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+}
+
+.AIbox {
+    margin-bottom: 40px;
+}
+
+.bar {
+    width: 100%;
+    position: absolute;
+    padding: 10px 25px;
+}
+
+.bar img {
+    height: 35px;
+}
+
+.welcomeMessage {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.welcomeMessage::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .chatBox {
+        font-size: 14px;
+        border: white solid;
+    }
+
+    .welcomeMessage {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .chatBox {
+        font-size: 14px;
+        padding: 80px 30px;
+    }
+
+    .welcomeMessage {
+        font-size: 18px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border: white solid;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .chatBox {
+        font-size: 15px;
+        padding: 80px 185px;
+    }
+
+}
